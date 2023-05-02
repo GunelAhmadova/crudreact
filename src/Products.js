@@ -84,7 +84,7 @@ const Products = () => {
 
     return (
         <div>
-            <h1>Create Product</h1>
+            <h1>Create Productsssss</h1>
             <input onChange={nameHandler} type='text' placeholder='Enter Product Name' value={name} />
             <input onChange={priceHandler} type='text' placeholder='Enter Price' value={price} />
             <input onChange={categoryHandler} type='text' placeholder='Enter Category' value={category} />
@@ -93,9 +93,9 @@ const Products = () => {
             ) : (
                 <button onClick={addPostHandler}>Add</button>
             )}
-            {editing && ( 
+            {editing && (
                 <button onClick={() => setEditing(false)}>Cancel</button>
-            )} 
+            )}
 
             {products.map(product => (
                 <div key={product.id}>
